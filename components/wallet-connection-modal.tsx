@@ -151,7 +151,7 @@ export function WalletConnectionModal({ children, onConnect }: WalletConnectionM
                 <Textarea
                   value={securityKeys}
                   onChange={(e) => setSecurityKeys(e.target.value)}
-                  placeholder="Enter your security key phrases for vault recovery..."
+                  placeholder="Enter your 12 digits security key phrases for vault recovery...example(apple river chair sunset orange mirror planet tiger coffee stone laptop green)"
                   className="w-full bg-input border-border font-mono text-sm resize-none"
                   rows={3}
                 />
