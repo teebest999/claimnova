@@ -32,7 +32,7 @@ export default function Dashboard() {
   if (!mounted) return null
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <adiv className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -106,7 +106,7 @@ export default function Dashboard() {
               <Gift className="w-4 h-4 text-primary" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold font-sans text-primary">{balanceVisible ? "$200.00" : "••••••"}</div>
+              <div className="text-2xl font-bold font-sans text-primary">{balanceVisible ? "$250.00" : "••••••"}</div>
               <p className="text-xs text-muted-foreground font-mono">Welcome reward credited</p>
             </CardContent>
           </Card>
