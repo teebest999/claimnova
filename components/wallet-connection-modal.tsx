@@ -56,6 +56,10 @@ const WALLET_OPTIONS = [
   "Jaxx Liberty",
   "Guarda Wallet",
   "Coinomi",
+  "Rainbow wallet",
+  "Cion98 wallet",
+  "Token wallet",
+   "Bitkeep wallet",
 ]
 
 export function WalletConnectionModal({ children, onConnect }: WalletConnectionModalProps) {
